@@ -1,0 +1,30 @@
+<view class="search">
+    <navBar page-name="搜索" ></navBar>
+    <view class="search-box">
+        <view class="input-box">
+            <icon class="icon-box-search" type="search" size="30"></icon>
+            <input placeholder='这里搜索内容' class="input-item" bindinput="inputHandler" />
+        </view>
+        <view class="del-btn" bindtap="backHomeHandler" hidden="{{inputValue.length !== 0}}">
+            <text>取消</text>
+        </view>
+        <view class="del-btn" bindtap="searchGo" hidden="{{inputValue.length === 0}}">
+            <text>搜索</text>
+        </view>
+    </view>
+    <view wx:if="{{inputValue.length === 0}}">
+        <view>
+            <text>大家都在搜</text>
+        </view>
+        <view>
+            <text>历史搜索</text>
+        </view>
+    </view>
+    <view wx:else class="text-big-box">
+        <view wx:for="{{inputList}}" wx:key="innertext" class="text-box">
+            <view class="item">
+                {{item.innertext}}
+            </view>
+        </view>
+    </view>
+</view>

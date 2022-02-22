@@ -1,0 +1,23 @@
+/* components/goodItem/goodItem.wxss */
+.good-warp{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30rpx;
+    justify-content: space-around;
+}
+.good-image{
+    width: 330rpx;
+}
+.good-title{
+    font-size: 32rpx;
+    color: #040A23;
+}
+.good-price{
+    display: flex;
+    color: #CA0E2D;
+    font-size: 24rpx;
+}
+.good-real{
+    font-size: 32rpx;
+    margin-right: 10rpx;
+}

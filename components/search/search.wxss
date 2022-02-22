@@ -1,0 +1,37 @@
+/* components/search/search.wxss */
+
+.search-warp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rpx 30rpx;
+    padding: 10rpx 20rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    position:fixed;
+    top: 0;
+    width:calc(100% - 50rpx);
+    box-sizing: border-box;
+}
+.search-left{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search-image{
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 20rpx;
+}
+.search-input{
+    color: rgb(154,160,177);
+    font-size: 30rpx;
+}
+.search-right{
+    font-size: 32rpx;
+    color: rgb(154,160,177);
+    margin: 0 0 0 20rpx;
+    padding: 0 0 0 20rpx;
+    border-left: 2rpx solid #ddd;
+}

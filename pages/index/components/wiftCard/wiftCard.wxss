@@ -1,0 +1,48 @@
+/* pages/index/components/wiftCard/wiftCard.wxss */
+.wift-warp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 8rpx;
+    padding: 10rpx;
+    border-radius: 10rpx;
+}
+.wift-image{
+    width: 190rpx;
+    height: 190rpx;
+    margin-top: 16rpx;
+}
+.wift-bottom{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #EBEDF1;
+    border-radius: 20rpx;
+    margin-top: 10rpx;
+}
+.wift-price{
+    text-decoration: line-through;
+    color: #666;
+    flex: 1;
+    font-size: 32rpx;
+    padding-left: 6rpx;
+}
+.wift-free{
+    background-color: #ee2b44;
+    color: #fff;
+    border-radius: 20rpx;
+    flex: 1;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wift-go{
+    background-image: url("https://cdn.weipaitang.com/static/2021080675aff3b0-8048-f3b08048-d233-ba1668152726-W28H28");
+    margin-left: 4rpx;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28rpx;
+    height: 28rpx;
+}

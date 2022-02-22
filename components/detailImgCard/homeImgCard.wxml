@@ -1,0 +1,12 @@
+<!-- components/homeImgCard/homeImgCard.wxml -->
+<view wx:for="{{bannerList}}" wx:key="id" class="banner-item home-detail-item">
+  <view><image src="{{item.url}}" ></image></view>
+    <view class="home-detail-text">{{item.msg}}</view>
+    <view class="home-detail-page">
+      <view wx:for="{{item.pages}}" wx:key="index">{{item}}</view>
+    </view>
+    <view class="home-detail-price">
+      <view class="price">¥{{item.price}}</view>
+      <view class="points">出价{{ item.pages.length + 4 }}次</view>
+    </view>
+</view>

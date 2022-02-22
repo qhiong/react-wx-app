@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "topInput":"/components/topInput/topInput",
+    "navBar":"/components/navBar/navBar",
+    "detailImgCard":"/components/detailImgCard/homeImgCard",
+    "classifyListItem":"/components/classifyListItem/classifyListItem"
+  }
+}

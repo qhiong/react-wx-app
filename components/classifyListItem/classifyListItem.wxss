@@ -1,0 +1,15 @@
+/* components/classifyListItem/classifyListItem.wxss */
+.list-item-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.list-item{
+  width: 25vw;
+}
+.list-item-img{
+  width: 20vw;
+  height: 20vh;
+}

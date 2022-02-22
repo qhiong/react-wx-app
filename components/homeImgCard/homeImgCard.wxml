@@ -1,0 +1,15 @@
+<!-- components/homeImgCard/homeImgCard.wxml -->
+<view wx:for="{{bannerList}}" wx:key="id" class="banner-item" bindtap="changeHandler" data-detailId="{{item.id}}">
+  <view class="banner-inner">
+    <image src="{{item.url}}" mode="aspectFill" class="banner-img"
+    lazy-load
+    ></image>
+    <view class="text-box">
+      <view class="text-msg">{{item.msg}}</view>
+      <view class="text-icon">
+        <view wx:for="{{item.pages}}" wx:key="index" class="text-icon-item">{{item}}</view>
+      </view>
+      <text class="text-price">¥{{item.price}}起</text>
+    </view>
+  </view>
+</view>

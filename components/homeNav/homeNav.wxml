@@ -1,0 +1,8 @@
+<!--components/homeNav/homeNav.wxml-->
+<view class="navlist-warp">
+    <view wx:for="{{navList}}" wx:key="index" class="img-box" bindtap="navChangeHandler" data-title="{{item.title}}">
+        <image src="{{item.imgUrl}}" 
+        class="nav-img"></image>
+        <text>{{item.title}}</text>
+    </view>
+</view>

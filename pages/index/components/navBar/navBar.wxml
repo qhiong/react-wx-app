@@ -1,0 +1,7 @@
+<!--pages/index/components/navBar/navBar.wxml-->
+<view class="nav-bar-warp" style="background-color: {{bgColor}};">
+    <view wx:for="{{navList}}" wx:key="index" class="nav-bar-item" style="flex-direction: {{flexDir}};">
+        <image class="nav-bar-img" src="{{item.src}}" style="height: {{heightNav}}rpx;width: {{widthNav}}rpx;"></image>
+        <text style="color: {{textColor}};font-size: {{textSize}}rpx;">{{item.title}}</text>
+    </view>
+</view>

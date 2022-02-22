@@ -1,0 +1,43 @@
+/* components/homeImgCard/homeImgCard.wxss */
+.banner-item {
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 45vw;
+  margin-bottom: 16rpx;
+}
+
+.home-detail-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-detail-item image {
+  width: 100%;
+  height: 300rpx;
+}
+.home-detail-page{
+  display: flex;
+  margin: 10rpx 0;
+}
+.home-detail-page view{
+  background-color: rgb(238, 238, 238);
+  color: red;
+  margin-right: 16rpx;
+  border: 1px solid orangered;
+  border-radius: 10rpx;
+}
+.home-detail-price{
+  display: flex;
+  align-items: flex-end;
+}
+.home-detail-price .price{
+  font-weight: bold;
+  color: #ca0e2d;
+}
+.home-detail-price .points{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #9aa0b1;
+}

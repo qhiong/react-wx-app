@@ -1,0 +1,35 @@
+<!--components/comList/comList.wxml-->
+
+<block>
+  <slot></slot>
+  <view wx:for="{{imgListAll}}" wx:key="index" class="conList-box">
+    <view class="conList-box-top">
+      <view class="conList-box-top-img">
+        <image src="{{item.iconImg}}" mode="scaleToFill"></image>
+      </view>
+      <view class="conList-box-top-name">{{item.name}} </view>
+      <view wx:if="{{item.guanzhu}}" class="conList-box-top-text"><text>+关注</text></view>
+      <view wx:else class="conList-box-top-text active-com"><text>已关注</text></view>
+    </view>
+    <view>
+      <video src="{{item.videoId}}" class="video-box"></video>
+    </view>
+    <view>
+      <text>{{item.itemMsg}}</text>
+    </view>
+    <view>
+      <view class="change-img-box">
+        <input placeholder="说两句" />
+        <view>
+          <image mode="aspectFill" src="https://cdn.weipaitang.com/static/20211118000f0251-a142-0251a142-15de-9677b51e494f-W48H48"></image>评论
+        </view>
+        <view>
+          <image mode="aspectFill" src="https://cdn.weipaitang.com/static/20210915e024b471-388e-b471388e-d82d-8260055fff15-W48H48"></image>点赞
+        </view>
+        <view>
+          <image mode="aspectFill" src="https://cdn.weipaitang.com/static/20210915cc07c50c-0ba7-c50c0ba7-76a4-34326871a22f-W48H48"></image>转发
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

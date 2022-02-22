@@ -1,0 +1,5 @@
+/* components/waterFall/waterFall.wxss */
+.water-big{
+    display: flex;
+    justify-content: space-around;
+}

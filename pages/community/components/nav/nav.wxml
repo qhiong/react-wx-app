@@ -1,0 +1,11 @@
+<!--pages/community/components/nav/nav.wxml-->
+<scroll-view class="comm-nav" scroll-x enable-flex>
+    <view wx:for="{{navList}}" wx:key="index" 
+        style="font-weight:{{currentNav===item.id?'bold':''}}" 
+        class="comm-nav-item"
+        bindtap="onClickChangeNav"
+        data-id="{{item.id}}"
+    >
+        <text>{{item.title}}</text>
+    </view>
+</scroll-view>

@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<scroll-view class="container" bindscroll="bindScrollToLower" scroll-y>
+  <search></search>
+  <view class="mt"></view>
+  <nav-bar navList="{{navList}}" textSize="26" textColor="#040a23" widthNav="106" heightNav="106" flexDir="column"></nav-bar>
+  <nav-bar navList="{{adList}}" bgColor="#EFF0F5" textSize="24" textColor="#9AA0B1" widthNav="28" heightNav="28" flexDir="row"></nav-bar>
+  <view class="wift-warp">
+    <view class="wift-top">
+      <view class="wift-top-left"></view>
+      <view class="wift-top-center"></view>
+      <view class="wift-top-right"></view>
+    </view>
+    <scroll-view class="wift-con" scroll-x enable-flex>
+      <!-- 卡片 -->
+      <wift-card wx:for="{{wiftList}}" wx:key="index" target="{{item}}"></wift-card>
+    </scroll-view>
+    <view class="wift-steps">
+      <view class="wift-step"></view>
+    </view>
+  </view>
+  <view class="goods-warp">
+    <!-- 商品列表 -->
+    <view class="water-warp" id="water-fall">
+      <water-fall wx:for="{{dataSourceSet}}" bind:eventToDetail="eventToDetail" wx:key="index" dataSource="{{item.value}}"></water-fall>
+    </view>
+    <view id="donot-pull">别拉了，我是有底线的</view>
+  </view>
+</scroll-view>
+

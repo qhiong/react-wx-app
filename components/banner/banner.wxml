@@ -1,0 +1,24 @@
+<!--components/banner/banner.wxml-->
+<view class="banner-wrap">
+    <view class="back-warp">
+        <view class="banner-top">
+            <view class="banner-top-item">
+                <text>新人豪礼</text>
+                <view class="text-img"></view>
+            </view>
+            <view class="more"></view>
+        </view>
+        <scroll-view scroll-x enable-flex
+        enhanced
+        show-scrollbar
+        class="banner-item-box">
+            <view wx:for="{{bannerList}}" wx:key="id" class="banner-item">
+                <image src="{{item.url}}" class="banner-img"></image>
+                <view class="text-box">
+                    <text class="text-del">¥{{item.price}}</text>
+                    <text class="text-mian">免费=></text>
+                </view>
+            </view>
+        </scroll-view >
+    </view>
+</view>

@@ -1,0 +1,6 @@
+<!--components/topInput/topInput.wxml-->
+<navigator url="/pages/search/search" open-type="navigate" hover-class="navigator-hover" class="navigator-img-box" style="{{myStyle}}">
+    <icon class="icon-box-search" type="search" size="30"></icon>
+    <input type="text" placeholder="手表二手" class="input-top" disabled/>
+    <view class="top-search" hidden="{{showBtn}}">| {{showText}}</view>
+</navigator>

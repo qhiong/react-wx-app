@@ -1,0 +1,37 @@
+/* components/homeImgCard/homeImgCard.wxss */
+.banner-item {
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner-inner {
+  padding: 15rpx;
+}
+
+.banner-img {
+  height: 20vh;
+  width: 300rpx;
+}
+.text-box{
+  width: 300rpx;
+}
+.text-msg {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-icon{
+  display: flex;
+  margin: 10rpx 0 ;
+}
+.text-icon-item{
+  background-color: rgb(238, 238, 238);
+  color: red;
+  margin-right: 16rpx;
+  border: 1px solid orangered;
+  border-radius: 10rpx;
+}
+.text-price{
+  color: red;
+}

@@ -1,0 +1,7 @@
+<!--components/waterFall/waterFall.wxml-->
+
+    <view class="water-big" >
+        <good-item target="{{dataSource}}" bind:eventToDetail="eventToDetail"></good-item>
+    </view>
+
+

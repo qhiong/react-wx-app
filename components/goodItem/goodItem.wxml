@@ -1,0 +1,9 @@
+<!--components/goodItem/goodItem.wxml-->
+<view class="good-warp" wx:for="{{target}}" wx:key="index" data-id="{{item.id}}" bindtap="eventToDetail">
+    <image mode="widthFix" class="good-image"  src="{{item.imglist[0]}}" ></image>
+    <text class="good-title">{{item.goodname}}</text>
+    <view class="good-price">
+        <text class="good-real">￥{{item.goodprice}}</text>
+        <text>起</text>
+    </view>
+</view>

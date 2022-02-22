@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav":"./components/nav/nav",
+    "header":"./components/header/header",
+    "search":"/components/search/search",
+    "comm-item":"./components/commItem/commItem"
+  }
+}

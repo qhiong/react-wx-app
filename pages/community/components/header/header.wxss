@@ -1,0 +1,35 @@
+/* pages/community/components/header/header.wxss */
+.comm-top{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+.comm-aut{
+    width: 56rpx;
+    height: 56rpx;
+}
+.comm-find-follow{
+    display: flex;
+    font-size: 32rpx;
+    color: rgb(13,19,43);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+.comm-follow{
+    margin-right: 20rpx;
+}
+.show-find{
+    color: black;
+    font-size: 40rpx;
+    font-weight: bold;
+    
+}

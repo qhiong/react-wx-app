@@ -1,0 +1,84 @@
+/* components/banner/banner.wxss */
+.banner-wrap {
+    height: 30vh;
+    padding: 0 30rpx;
+    overflow: hidden;
+}
+.back-warp{
+    background-image: url(https://cdn.weipaitang.com/static/20210928c3fc2421-cfe4-2421cfe4-012c-d85cea278cee-W686H376);
+    background-size: contain;
+    height: 30vh;
+    background-repeat: no-repeat;
+}
+.text-img {
+    background: url(https://cdn.weipaitang.com/static/public/202109289e248de5-a439-8de5a439-292d-b84aae012a35-W144H35.gif) no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 30vw;
+}
+
+.banner-top-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    font-size: 32rpx;
+    padding-top: 10rpx;
+}
+
+.banner-top-item>text {
+    padding-top: 10rpx;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.banner-top {
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+}
+
+.more {
+    background-image: url(https://cdn.weipaitang.com/static/20210916a772b74b-9222-b74b9222-4a8b-1cc21153ebd4-W120H58);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 60px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-size: contain;
+}
+
+.banner-item-box {
+    display: flex;
+    padding-left: 10px;
+    height: 21vh;
+    width: 90vw;
+    overflow: hidden;
+}
+.banner-img{
+    height: 200rpx;
+    width: 200rpx;
+}
+.banner-item{
+    margin-right: 30rpx;
+    background-color: white;
+}
+.text-box{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.1);
+    height: 4vh;
+    padding-top: 10rpx;
+}
+.text-del{
+    text-decoration: line-through;
+}
+.text-mian{
+    background-color: red;
+    color: white;
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 30rpx;
+    padding: 0 10rpx;
+    border-radius: 20rpx;
+}

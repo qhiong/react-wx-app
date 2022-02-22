@@ -1,0 +1,48 @@
+/* components/homeDetailCard/homeDetailCard.wxss */
+.home-detail {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home-detail-item {
+  width: 45vw;
+  margin-bottom: 16rpx;
+}
+
+.home-detail-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-detail-item image {
+  width: 45vw;
+  height: 400rpx;
+}
+.home-detail-page{
+  display: flex;
+  margin: 10rpx 0;
+}
+.home-detail-page view{
+  background-color: rgb(238, 238, 238);
+  color: red;
+  margin-right: 16rpx;
+  border: 1px solid orangered;
+  border-radius: 10rpx;
+  padding: 0 6rpx;
+}
+.home-detail-price{
+  display: flex;
+  align-items: flex-end;
+}
+.home-detail-price .price{
+  font-weight: bold;
+  color: #ca0e2d;
+}
+.home-detail-price .points{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #9aa0b1;
+}

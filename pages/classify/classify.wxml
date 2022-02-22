@@ -1,0 +1,49 @@
+<!--pages/classify/classify.wxml-->
+<view class="classify-warp" wx:if="{{!showDetails}}">
+  <navBar page-name="分类" ></navBar>
+  <topInput></topInput>
+  <view class="classify-content">
+    <view class="classify-left">
+      <view wx:for="{{navList}}" wx:key="index" class="{{showIndex == index ? 'nav-left-item active' : 'nav-left-item'}}" bindtap="navLeftChange" data-indexId="{{index}}">
+        {{item.name}}
+      </view>
+    </view>
+    <scroll-view class="classify-right" scroll-y bindscroll="classifyScroll" scroll-with-animation scroll-top="{{classifyBoxTop}}">
+      <view wx:for="{{navList}}" wx:key="index" class="classify-list-box">
+        <view class="classify-list-top" data-changeIndex="{{index}}">
+          <view><text>{{item.name}}</text></view>
+          <view class="see-all"><text decode="ture">查看全部 &gt;</text></view>
+        </view>
+        <classifyListItem List="{{item.nameList}}" bind:changeDetailHandler="changeDetailHandler"></classifyListItem>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view wx:else class="classify-warp">
+  <navBar showText>
+    <view class="showText-box" style="top: {{navTop}}px" bindtap="changeSearchHandler">
+      <icon class="icon-box-search" type="search" size="30"></icon>
+      <input type="text" placeholder="手表二手" class="input-top" disabled/>
+    </view>
+  </navBar>
+  <view class="classify-detail-top">
+    <view><text>竞拍</text></view>
+    <view><text>一口价</text></view>
+  </view>
+  <view class="classify-detail-nav"
+    style="{{scrollDetail > 100 ? 'color:black;top:-31px' : 'color:blue;top:0px'}}"
+  >
+    <view>综合排序</view>
+    <view>最新上拍</view>
+    <view class="classify-detail-nav-af">即将戳拍</view>
+    <view class="classify-detail-nav-b"><image src="	https://cdn.weipaitang.com/static/202107069841abdd-7d3a-abdd7d3a-5983-d457df0d2f67-W32H32"></image><text>筛选</text></view>
+    <view class="classify-detail-nav-b"><icon class="icon-box-search" type="search" size="30"></icon></view>
+  </view>
+  <scroll-view scroll-y class="class-detail" enable-flex
+    bindscroll="scrollDetailHandler"
+    scroll-top="{{scrollDetailTop}}"
+    style="{{scrollDetail > 100 ? 'top:-31px' : 'top:0px'}}"
+  >
+    <detailImgCard bannerList="{{detailList}}" class="class-detail-box"></detailImgCard>
+  </scroll-view>
+</view>

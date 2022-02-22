@@ -1,0 +1,12 @@
+<!--pages/community/components/header/header.wxml-->
+<view class="comm-top">
+    <image src="" class="comm-aut"></image>
+    <view class="comm-find-follow">
+        <view class="comm-follow {{currentFind?'':'show-find'}}" bindtap="onClickChangeFind" data-bool="false">
+            <text>关注</text>
+        </view>
+        <view class="comm-find {{currentFind?'show-find':''}}"  bindtap="onClickChangeFind" data-bool="true">
+            <text>发现</text>
+        </view>
+    </view>
+</view>

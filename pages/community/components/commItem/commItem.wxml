@@ -1,0 +1,35 @@
+<!--pages/community/components/commItem/commItem.wxml-->
+<view class="item-warp" >
+    <view class="item-top">
+        <view class="item-tou">
+            <image mode="aspectFill" src="{{target.touxiang}}" class="item-face"></image>
+            <text class="item-name">{{target.comcatename}}</text>
+        </view>
+        <view class="item-btn"><text>+关注</text></view>
+    </view>
+    <view class="comm-images">
+        <image wx:for="{{target.imglist}}" mode="widthFix" style="width:{{1/target.imglist.length*100}}%" src="{{item}}" class="comm-image"></image>
+    </view>
+    <view class="comm-con">
+        <text class="con-label">#{{target.label}}#</text>
+        <text class="con-label">@{{target.shopname}}</text>
+        <text class="con-question">{{target.question}}</text>
+    </view>
+    <view class="com-bottom">
+        <view class="bot-input">
+            <image src="./../../../../public/images/message.png" class="bot-images"></image>
+            <text class="bott-input">说两句...</text>
+        </view>
+        <view class="bot-comment">
+            <image src="./../../../../public/images/message.png" class="bot-images"></image>
+            <text>{{target.comment}}</text>
+        </view>
+        <view class="bot-comment">
+            <image src="./../../../../public/images/heart.png" class="bot-images"></image>
+            <text>{{target.zan}}</text>
+        </view>
+        <view class="bot-forward" bindtap="onForwordHandle">
+            <image src="./../../../../public/images/forword.png" class="bot-images"></image>
+        </view>
+    </view>
+</view>

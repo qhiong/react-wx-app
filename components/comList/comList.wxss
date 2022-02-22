@@ -1,0 +1,53 @@
+/* components/comList/comList.wxss */
+.conList-box-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.conList-box-top-name{
+  text-align: left;
+  flex: 1;
+  margin-left: 30rpx;
+}
+.conList-box-top-img{
+  width: 80rpx;
+  height: 80rpx;
+  border: 2rpx solid #333;
+  border-radius: 40rxp;
+  overflow: hidden;
+}
+.conList-box-top-img image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.conList-box-top-text{
+  border: 2rpx solid #999;
+  padding: 0 6rpx;
+  border-radius: 10rpx;
+}
+.video-box{
+  width: 100%;
+}
+.change-img-box{
+  display: flex;
+  margin: 20rpx 0;
+}
+.active-com{
+  background-color: orange;
+}
+.change-img-box input{
+  flex: 1;
+  margin-left: 5rpx;
+  outline: 1px solid #999;
+}
+.change-img-box view{
+  width: 130rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.change-img-box image{
+  width: 40rpx;
+  height: 40rpx;
+}

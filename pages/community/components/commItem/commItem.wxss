@@ -1,0 +1,84 @@
+/* pages/community/components/commItem/commItem.wxss */
+
+.item-top{
+    margin: 30rpx 30rpx 30rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-tou{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.item-face{
+    width: 88rpx;
+    height: 88rpx;
+    margin-right: 20rpx;
+    border-radius: 44rpx;
+}
+.item-name{
+    font-size: 30rpx;
+    color: #040a23;
+    font-weight: bold;
+}
+.item-btn{
+    width: 140rpx;
+    height: 60rpx;
+    border: 2rpx solid #cdced3;
+    color: #040a23;
+    border-radius: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comm-images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 30rpx;
+}
+.comm-con{
+    font-size: 32rpx;
+    color: #040a23;
+    margin-top: 30rpx;
+    margin-right: 30rpx;
+}
+.con-label{
+    color: #1f4886;
+    margin-right: 20rpx;
+}
+.com-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30rpx;
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: rgb(158,164,180);
+    align-items: center;
+}
+.com-bottom image{
+    margin-right: 16rpx;
+}
+.bot-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2rpx solid #ddd;
+    width: 240rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+}
+.bot-images{
+    width: 40rpx;
+    height: 40rpx;
+}
+.bott-input{
+    color: #9aa0b1;
+}
+.bot-comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,7 @@
+<!--components/classifyListItem/classifyListItem.wxml-->
+<view class="list-item-box">
+ <view wx:for="{{List}}" wx:key="id" class="list-item" data-itemId="{{item.id}}" bindtap="changeHandler">
+  <image src="{{item.img}}" mode="scaleToFill" class="list-item-img"></image>
+  <view><text>{{item.text}}</text></view>
+ </view>
+</view>

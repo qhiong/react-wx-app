@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "topInput":"/components/topInput/topInput",
+    "navBar":"/components/navBar/navBar",
+    "homeDetailCard":"/components/homeDetailCard/homeDetailCard"
+  }
+}

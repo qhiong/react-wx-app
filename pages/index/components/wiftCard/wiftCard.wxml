@@ -1,0 +1,8 @@
+<!--pages/index/components/wiftCard/wiftCard.wxml-->
+<view class="wift-warp">
+    <image class="wift-image" src="{{target.src}}" ></image>
+    <view class="wift-bottom">
+        <text class="wift-price">￥{{target.price}}</text>
+        <view class="wift-free"><text>免费</text><view class="wift-go"></view></view>
+    </view>
+</view>

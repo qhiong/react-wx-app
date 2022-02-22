@@ -1,0 +1,70 @@
+/**index.wxss**/
+.container{
+  background-color: rgb(248,249,250);
+  width: 100%;
+  height: calc(100vh - 52rpx);
+}
+.mt{
+  width: 100%;
+  margin-top: 70rpx;
+}
+.wift-warp{
+  background-image: url("https://cdn.weipaitang.com/static/20210928c3fc2421-cfe4-2421cfe4-012c-d85cea278cee-W686H376");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 36rpx 30rpx;
+  padding: 26rpx;
+  position: relative;
+}
+.wift-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wift-top-left{
+  background-image: url("https://cdn.weipaitang.com/static/20210930b9a7f8dd-0e58-f8dd0e58-19b8-255331b0ec98-W146H30");
+  background-repeat: no-repeat;
+  width: 140rpx;
+  height: 30rpx;
+  background-size: contain;
+}
+.wift-top-center{
+  background-image: url("https://cdn.weipaitang.com/static/public/202109289e248de5-a439-8de5a439-292d-b84aae012a35-W144H35.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 1;
+  height: 32rpx;
+}
+.wift-top-right{
+  background-image: url("https://cdn.weipaitang.com/static/20210916a772b74b-9222-b74b9222-4a8b-1cc21153ebd4-W120H58");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120rpx;
+  height: 60rpx;
+}
+.wift-con{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wift-steps{
+  display: flex;
+  background-color: #a60c25;
+  width: 88rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20rpx;
+}
+.wift-step{
+  width: 44rpx;
+  height: 8rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+.water-warp{
+  display: flex;
+    justify-content: space-around;
+}

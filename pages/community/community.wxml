@@ -1,0 +1,15 @@
+<!--pages/community/community.wxml-->
+<view class="comm-blank">
+    <header currentFind="{{currentFind}}" bind:onClickChangeFind="onClickChangeFind"></header>
+    <nav currentNav="{{currentNav}}" navList="{{navList}}" bind:onClickChangeNav="onClickChangeNav"></nav>
+    <!-- <search posi="false"></search> -->
+</view>
+<view class="show-iamge">
+    <view class="show-image-one"></view>
+    <view class="show-image-two"></view>
+</view>
+<scroll-view class="comm-items">
+    <view wx:for="{{commItenList}}" wx:key="index">
+        <comm-item target="{{item}}"></comm-item>
+    </view>
+</scroll-view>

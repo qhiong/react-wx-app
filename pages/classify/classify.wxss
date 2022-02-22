@@ -1,0 +1,116 @@
+/* pages/classify/classify.wxss */
+.classify-warp{
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+}
+.classify-content{
+  display: flex;
+  height: 95vh;
+}
+.classify-left{
+  background-color: #f8f9fa;
+  width: 25vw;
+}
+.nav-left-item{
+  text-align: center;
+  margin: 30rpx 0;
+}
+.nav-left-item.active{
+  color: #ca0e2d;
+  font-weight: 600;
+  position: relative;
+}
+.nav-left-item.active::before{
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 6rpx;
+  left: 0;
+  background-color:#ca0e2d ;
+}
+.classify-right{
+  width: 75vw;
+}
+.classify-list-top{
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0 ;
+  padding: 10rpx 20rpx ;
+  color: #9aa0b1;
+  background-color: rgba(0,0,0,0.1);
+}
+.see-all{
+  color:#666;
+}
+.classify-detail-top{
+  display: flex;
+  padding: 10rpx 0;
+  justify-content: space-evenly;
+}
+.showText-box{
+  width: 60%;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  left: 60px;
+  position: absolute;
+  z-index: 10;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.showText-box > input {
+  height: 32px;
+  line-height: 32px;
+}
+.class-detail{
+  height: 85vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  position: relative;
+}
+.class-detail-box{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.classify-detail-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 20rpx;
+  align-items: center;
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s;
+}
+.classify-detail-nav image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+.classify-detail-nav-af{
+  position: relative;
+}
+.classify-detail-nav-af::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 2rpx;
+  background-color: #999;
+  top: 0;
+  right: -26rpx;
+}
+.classify-detail-nav-b{
+  display: flex;
+  align-items: center;
+}

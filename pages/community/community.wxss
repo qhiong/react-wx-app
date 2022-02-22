@@ -1,0 +1,24 @@
+/* pages/community/community.wxss */
+.comm-blank{
+    margin-top: 180rpx;
+}
+.show-iamge{
+    display: flex;
+    margin: 0 20rpx;
+    justify-content: space-between;
+}
+.show-image-one{
+    width: 334rpx;
+    height: 160rpx;
+    background-size: contain;
+    background-image: url("https://cdn.weipaitang.com/skywebp/shequ/tupian/image/20220119/97d623fe90ed46cc8979dcf5df6d6341-W501H240/w/640");  
+}
+.show-image-two{
+    width: 334rpx;
+    background-size: contain;
+    height: 160rpx;
+    background-image: url("https://cdn.weipaitang.com/skywebp/shequ/tupian/image/20211227/624d1fe4168f4a7083258a037780e7ad-W501H240/w/640");
+}
+.comm-items{
+    margin: 20rpx;
+}

@@ -1,0 +1,10 @@
+<!--components/search/search.wxml-->
+<view bindtap="goSearch" class="search-warp" style="top:{{top}}rpx;position: {{posi?'none':'absolute'}};height:{{height?height+'rpx':null}}">
+    <view class="search-left" style="background: {{bgColor}};">
+        <image class="search-image" src="./../../public/images/search.png"></image>
+        <input class="search-input" placeholder="衣柜" />
+    </view>
+    <view class="search-right">
+        <text>搜索</text>
+    </view>
+</view>

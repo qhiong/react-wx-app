@@ -1,0 +1,15 @@
+/* pages/index/components/navBar/navBar.wxss */
+.nav-bar-warp{
+    margin: 0 30rpx;
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rpx;
+    border-radius: 10rpx;
+}
+.nav-bar-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

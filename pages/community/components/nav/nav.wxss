@@ -1,0 +1,16 @@
+/* pages/community/components/nav/nav.wxss */
+.comm-nav{
+    position: fixed;
+    top: 100rpx;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    margin-top: -14rpx;
+}
+.comm-nav-item{
+    flex: 1 0 auto;
+    background-color: #fff;
+    padding: 0 24rpx;
+    height: 88rpx;
+}
